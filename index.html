@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="azizulazri amir sharifuddin wong">
-    <title>aasw | Portfolio</title>
+    <title>Takaful | Khairul Azwan</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -12,13 +12,11 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="#home" class="logo">azizulazri.amirsw</a>
+            <a href="#home" class="logo">Takaful Khairul Azwan</a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#about">Karier</a></li>
+                <li><a href="#contact">Berhubung</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -31,562 +29,538 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container hero-content">
-            <p class="hero-greeting">Hello, I'm</p>
-            <h1 class="hero-title">Azizulazri Amir Sharifuddin Wong</h1>
-            <h2 class="hero-subtitle">Software Developer & Data Engineer</h2>
-            <p class="hero-description">
-                Primary experience, but not limited to developing, maintaining, and improving data pipelines for a reliable source of truth that drives solutions to real problems.
-            </p>
-            <p class="hero-description">
-                Adaptable and quick to learn new technologies, with a strong foundation in software development and data engineering principles, to adjust to the ever-evolving tech landscape and deliver innovative solutions.
-            </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            <div class="hero-image">
+                <img src="images/brandlogo.jpg" alt="PrudentialBSN">
             </div>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/azizulazriamirsw" target="_blank" aria-label="LinkedIn">LinkedIn</a>
-                <a href="https://github.com/azizulazriamirsw" target="_blank" aria-label="GitHub">GitHub</a>
+            <div class="hero-description">
+                <p>Takaful bukan sekadar mengejar <span style="color: var(--text-bsn-teal);">KEUNTUNGAN</span> tapi,</p>
+                <p>perlindungan daripada <span style="color: var(--text-pru-red);">KERUGIAN</span> yang lebih besar</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary btn-contact">Konsultansi Percuma</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Produk</h2>
+            <div class="products-list">
+                
+                <!-- Product Article 1 -->
+                <article class="products-group">
+                    <div class="products-header">
+                        <img src="images/products/WarisanGold.jpg" alt="Product 1" loading="lazy">
+                        <div class="products-header-text">
+                        <h3>
+                            <span style="color: var(--text-pru-red);">Pru</span><span style="color: var(--text-bsn-teal);">BSN</span> Warisan Gold
+                        </h3>
+                        <h2>Hibah, untuk yang tersayang</h2>
+                        <p>Caruman bermula dari <span style="color: var(--text-bsn-teal);">RM100/sebulan</span></p>
+                        <p>Hibah berganda sehingga <span style="color: var(--text-bsn-teal);">600%</span></p>
+
+                        <!-- TOGGLE BUTTON -->
+                        <button 
+                            class="btn btn-sm btn-pill btn-subtle products-toggle-btn"
+                            type="button"
+                            aria-expanded="false" 
+                            aria-controls="product-1-details"
+                        >
+                            <span class="btn-label">Ketahui lebih lanjut</span>
+                            <span class="btn-icon">▾</span>
+                        </button>
+                        </div>
+                    </div>
+
+                    <!-- HIDDEN PANEL -->
+                    <div class="products-body" id="product-1-details" hidden>
+                        <h3 class="products-body-title">Mengapa anda perlu <span style="color: var(--text-pru-red);">Pru</span><span style="color: var(--text-bsn-teal);">BSN</span> Warisan Gold?</h3>
+                        <div class="products-body-inner-dark">
+                            <div class="products-body-inner-grid-dark">
+                                <div class="products-body-card-m">
+                                    <img src="images/testimoni/testimoni01.jpg" alt="Testimoni 1" loading="lazy">
+                                </div>
+                                <div class="products-body-card-m">
+                                    <img src="images/testimoni/testimoni02.jpg" alt="Testimoni 2" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="products-body-title">Manfaat Pampasan</h3>
+                        <div class="products-body-inner">
+                            
+                            <!-- GRID of benefit cards -->
+                            <div class="products-body-inner-grid--3">
+
+                                <div class="products-body-card-s">
+                                    <img src="images/products/WarisanGold01.jpg" alt="Pampasan TPD" loading="lazy">
+                                    <h3>RM350,000</h3>
+                                    <p>Pampasan Kematian Semulajadi atau Hilang Upaya Kekal atau Menyeluruh (TPD)</p>
+                                </div>
+
+                                <div class="products-body-card-s">
+                                    <img src="images/products/WarisanGold02.jpg" alt="Kemalangan" loading="lazy">
+                                    <h3>RM700,000</h3>
+                                    <p>Pampasan Kematian Akibat Kemalangan</p>
+                                </div>
+
+                                <div class="products-body-card-s">
+                                    <img src="images/products/WarisanGold03.jpg" alt="Pengangkutan Awam" loading="lazy">
+                                    <h3>RM1,050,000</h3>
+                                    <p>Pampasan Kematian Akibat Kemalangan di dalam Pengangkutan Awam</p>
+                                </div>
+
+                                <div class="products-body-card-s">
+                                    <img src="images/products/WarisanGold04.jpg" alt="Luar Negara" loading="lazy">
+                                    <h3>RM1,400,000</h3>
+                                    <p>Pampasan Kematian Akibat Kemalangan di Luar Negara</p>
+                                </div>
+
+                                <div class="products-body-card-s">
+                                    <img src="images/products/WarisanGold05.jpg" alt="Bencana Alam" loading="lazy">
+                                    <h3>RM2,100,000</h3>
+                                    <p>Pampasan Kematian Akibat Kemalangan Bencana Alam</p>
+                                </div>
+
+                                <div class="products-body-card-s">
+                                    <img src="images/products/WarisanGold06.jpg" alt="Khairat Kematian" loading="lazy">
+                                    <h3>RM3,000</h3>
+                                    <p>Bantuan Kewangan Segera Apabila Berlaku Kematian</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- CTA -->
+                        <div class="products-body-cta">
+                            <p>Hubungi saya untuk simulasi caruman mengikut umur &amp; keperluan anda.</p>
+                            <div class="contact-btn">
+                                <a href="#contact" class="btn btn-primary btn-contact">Mohon Sekarang</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Product Article 2 -->
+                <article class="products-group">
+                    <div class="products-header">
+                        <img src="images/products/MedicalCard.jpg" alt="Product 2" loading="lazy">
+                        <div class="products-header-text">
+                            <h3>
+                            <span style="color: var(--text-pru-red);">Pru</span><span style="color: var(--text-bsn-teal);">BSN</span> Medical Card
+                            </h3>
+                            <h2>Anugerah Max & Setia</h2>
+                            <p>Pilih pelan insurans berperingkat</p>
+                            <p>Perlindungan anda dan keluarga</p>
+
+                            <!-- TOGGLE BUTTON -->
+                            <button 
+                                class="btn btn-sm btn-pill btn-subtle products-toggle-btn"
+                                type="button"
+                                aria-expanded="false" 
+                                aria-controls="product-2-details"
+                                >
+                                <span class="btn-label">Ketahui lebih lanjut</span>
+                                <span class="btn-icon">▾</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- HIDDEN PANEL -->
+                    <div class="products-body" id="product-2-details" hidden>
+                        <h3 class="products-body-title">Mengapa anda perlu <span style="color: var(--text-pru-red);">Pru</span><span style="color: var(--text-bsn-teal);">BSN</span> Medical Card</h3>
+                        <div class="products-body-inner-dark">
+                            <div class="products-body-inner-grid-dark">
+                                <div class="products-body-card-l">
+                                    <img src="images/testimoni/testimoni03.jpg" alt="Testimoni 3" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="products-body-title">Pilih Pelan Medical Card terbaik untuk anda dan keluarga</h3>
+                        <div class="products-body-inner">
+                            <div class="products-body-inner-grid">
+
+                                <!-- Prod desc: Anugerah Max -->
+                                <div class="products-body-card-m">
+                                    <h3>
+                                        <span style="color: var(--text-pru-red);">Pru</span><span style="color: var(--text-bsn-teal);">BSN</span> Anugerah Max
+                                    </h3>
+                                    <h2>Kadar Bilik (Sehari)</h2>
+                                    <ul><li>Plan 150, Plan 200, Plan 300, Plan 400</li></ul>
+                                    <h2>Had Perlindungan (Setahun)</h2>
+                                    <ul><li>RM150,000, RM200,000, RM300,000, RM400,000</li></ul>
+                                    <h2>Tempoh Perlindungan</h2>
+                                    <ul><li>70 ke 100 Tahun</li></ul>
+                                    <h2>Manfaat Pampasan</h2>
+                                    <ul>
+                                        <li>Kematian Biasa - Minima RM10,000</li>
+                                        <li>Hilang Upaya Kekal (TPD) - Minima RM10,000</li>
+                                        <li>Perlindungan Sakit Kritikal</li>
+                                        <li>Perlindungan Kanser</li>
+                                        <li>Perlindungan Pendapatan</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Prod desc: Setia -->
+                                <div class="products-body-card-m">
+                                    <h3>
+                                        <span style="color: var(--text-pru-red);">Pru</span><span style="color: var(--text-bsn-teal);">BSN</span> Setia
+                                    </h3>
+                                    <h2>Kadar Bilik (Sehari)</h2>
+                                    <ul><li>Plan 150, Plan 200, Plan 300, Plan 400</li></ul>
+                                    <h2>Had Perlindungan (Setahun)</h2>
+                                    <ul><li>Sehingga RM1 Juta, RM2 Juta, RM3 Juta</li></ul>
+                                    <h2>Tempoh Perlindungan</h2>
+                                    <ul><li>Sehingga ke 100 Tahun</li></ul>
+                                    <h2>Manfaat Pampasan</h2>
+                                    <ul>
+                                        <li>Kematian Biasa - Minima RM25,000</li>
+                                        <li>Hilang Upaya Kekal (TPD) - Minima RM25,000</li>
+                                        <li>Perlindungan Sakit Kritikal</li>
+                                        <li>Perlindungan Kanser</li>
+                                        <li>Perlindungan Pendapatan</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- CTA -->
+                        <div class="products-body-cta">
+                            <p>Hubungi saya untuk simulasi caruman mengikut umur &amp; keperluan anda.</p>
+                            <div class="contact-btn">
+                                <a href="#contact" class="btn btn-primary btn-contact">Mohon Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Product Article 3 -->
+                <article class="products-group">
+                    <div class="products-header">
+                        <img src="images/products/Aspirasi.jpg" alt="Product 3" loading="lazy">
+                        <div class="products-header-text">
+                            <h3>
+                                <span style="color: var(--text-pru-red);">Pru</span><span style="color: var(--text-bsn-teal);">BSN</span> Aspirasi
+                            </h3>
+                            <h2>Pelan simpanan takaful patuh Syariah</h2>
+                            <p>Simpanan, Pelaburan & Perlindungan</p>
+                            <p>Dividen dijamin <span style="color: var(--text-bsn-teal);">TETAP</span></p>
+                            
+                            <!-- TOGGLE BUTTON -->
+                            <button 
+                                class="btn btn-sm btn-pill btn-subtle products-toggle-btn"
+                                type="button"
+                                aria-expanded="false" 
+                                aria-controls="product-3-details"
+                            >
+                                <span class="btn-label">Ketahui lebih lanjut</span>
+                                <span class="btn-icon">▾</span>
+                            </button>
+                            
+                        </div>
+                    </div>
+
+                    <!-- HIDDEN PANEL -->
+                    <div class="products-body" id="product-3-details" hidden>
+                        <h3 class="products-body-title">Tahukah Anda?</h3>
+                        <div class="products-body-inner">
+                            <div class="products-body-inner-grid--3">
+
+                                <div class="products-body-card-s products-body-card-s--stat">
+                                    <h3>75%</h3>
+                                    <p>Rakyat Malaysia tidak dapat mengeluarkan wang tunai RM1,000 ketika kecemasan</p>
+                                </div>
+
+                                <div class="products-body-card-s products-body-card-s--stat">
+                                    <h3>57%</h3>
+                                    <p>Ibubapa di Malaysia memohon pinjaman untuk membiayai kos pendidikan anak-anak mereka</p>
+                                </div>
+
+                                <div class="products-body-card-s products-body-card-s--stat">
+                                    <h3>70%</h3>
+                                    <p>Pesara yang mengeluarkan simpanan mereka pada umur 55 tahun cenderung untuk menghabiskan semua simpanan mereka</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="products-body-title">Rancang dan urus kewangan anda dengan cara strategik</h3>
+                        <div class="products-body-map">
+                            <h3 class="visual-map-title">
+                                <span style="color: var(--text-pru-red);">Pru</span><span style="color: var(--text-bsn-teal);">BSN</span> Aspirasi
+                            </h3>
+                            
+                            <div class="map-hub">
+                                <!-- central hub -->
+                                <div class="map-hub-center">
+                                    <span class="map-hub-brand">
+                                    <span style="color: var(--text-pru-red);">Pru</span><span style="color: var(--text-bsn-teal);">BSN</span>
+                                    </span>
+                                    <span class="map-hub-name">Aspirasi</span>
+                                </div>
+
+                                <!-- 5 spokes -->
+                                <div class="map-hub-item" style="--angle: -90deg;">
+                                    <span class="map-hub-icon">🩺</span>
+                                    <span class="map-hub-text">Ada Sakit<br>Boleh Apply</span>
+                                </div>
+                                <div class="map-hub-item" style="--angle: -18deg;">
+                                    <span class="map-hub-icon">🕌</span>
+                                    <span class="map-hub-text">Patuh Syariah</span>
+                                </div>
+                                <div class="map-hub-item" style="--angle: 54deg;">
+                                    <span class="map-hub-icon">💰</span>
+                                    <span class="map-hub-text">Simpanan<br>20 Tahun</span>
+                                </div>
+                                <div class="map-hub-item" style="--angle: 126deg;">
+                                    <span class="map-hub-icon">📅</span>
+                                    <span class="map-hub-text">Bayaran Tunai<br>30 Tahun</span>
+                                </div>
+                                <div class="map-hub-item" style="--angle: 198deg;">
+                                    <span class="map-hub-icon">🛡️</span>
+                                    <span class="map-hub-text">Hibah Takaful<br>30 Tahun</span>
+                                </div>
+                            </div>
+
+                            <!-- mobile fallback -->
+                            <ul class="map-hub-fallback">
+                                <li><span>🩺</span> Ada Sakit Boleh Apply</li>
+                                <li><span>🕌</span> Patuh Syariah</li>
+                                <li><span>💰</span> Simpanan Selama 20 Tahun Sahaja</li>
+                                <li><span>📅</span> Bayaran Tunai 30 Tahun</li>
+                                <li><span>🛡️</span> Hibah Takaful 30 Tahun</li>
+                            </ul>
+
+                        </div>
+
+                        <h3 class="products-body-title">Bandingkan simpanan bank dan <span style="color: var(--text-pru-red);">Pru</span><span style="color: var(--text-bsn-teal);">BSN</span> Aspirasi</h3>
+                        <div class="products-body-table">
+                            <table class="product-table">
+                                <thead>
+                                <tr>
+                                    <th>Simpanan</th>
+                                    <th>Bank</th>
+                                    <th>PruBSN Aspirasi</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td data-label="Simpanan">Product</td>
+                                    <td data-label="Bank">Simpanan</td>
+                                    <td data-label="PruBSN Aspirasi">Simpanan, Perlaburan &amp; Perlindungan</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Simpanan">Bulanan</td>
+                                    <td data-label="Bank">RM300</td>
+                                    <td data-label="PruBSN Aspirasi">RM300</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Simpanan">Tempoh Simpanan</td>
+                                    <td data-label="Bank">20 Tahun</td>
+                                    <td data-label="PruBSN Aspirasi">20 Tahun</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Simpanan">Jenis Perlaburan</td>
+                                    <td data-label="Bank">Konvensional</td>
+                                    <td data-label="PruBSN Aspirasi">Islamik</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Simpanan">Dividen</td>
+                                    <td data-label="Bank">Tidak Tetap</td>
+                                    <td data-label="PruBSN Aspirasi">Dijamin Tetap</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Simpanan">Tahap Dividen</td>
+                                    <td data-label="Bank">Rendah</td>
+                                    <td data-label="PruBSN Aspirasi">Tertinggi</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Simpanan">Jika Berlaku Kematian</td>
+                                    <td data-label="Bank">Dibekukan</td>
+                                    <td data-label="PruBSN Aspirasi">Hibah</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Simpanan">Keuntungan</td>
+                                    <td data-label="Bank">RM72,000</td>
+                                    <td data-label="PruBSN Aspirasi">RM140,000</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <!-- CTA -->
+                        <div class="products-body-cta">
+                            <p>Hubungi saya untuk simulasi caruman mengikut umur &amp; keperluan anda.</p>
+                            <div class="contact-btn">
+                                <a href="#contact" class="btn btn-primary btn-contact">Mohon Sekarang</a>
+                            </div>
+                        </div>
+                    </div>                    
+                </article>
+
             </div>
         </div>
     </section>
+
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <div class="about-image">
-                    <img src="images/profile.jpg" alt="Your Name">
+                <!-- ============================================= -->
+                <!-- Section 1: Join our team -->
+                <!-- ============================================= -->
+                <div class="about-section">
+                    <h3 class="section-title">Sertai pasukan kami</h3>
+                    <div class="about-text">
+                        <p>
+                        Bina kerjaya dalam industri takaful.
+                        Kami mencari individu yang bersemangat, berdedikasi, dan ingin
+                        memberi impak kepada masyarakat.
+                        </p>
+                        <p>
+                        Latihan percuma, bimbingan berterusan, dan pendapatan yang
+                        kompetitif menanti anda.
+                        </p>
+                        <a href="#contact" class="btn btn-primary btn-contact">Sertai Sekarang</a>
+                    </div>
+
+                    <div class="about-gallery">
+                        <a href="images/team/team01.jpg" class="gallery-item" target="_blank" rel="noopener">
+                        <img src="images/team/team01.jpg" alt="Team activity 1" loading="lazy">
+                        <span class="gallery-overlay">
+                            <span class="gallery-caption">Team Building</span>
+                        </span>
+                        </a>
+
+                        <a href="images/team/team02.jpg" class="gallery-item" target="_blank" rel="noopener">
+                        <img src="images/team/team02.jpg" alt="Team activity 2" loading="lazy">
+                        <span class="gallery-overlay">
+                            <span class="gallery-caption">Training Session</span>
+                        </span>
+                        </a>
+
+                        <a href="images/team/team03.jpg" class="gallery-item" target="_blank" rel="noopener">
+                        <img src="images/team/team03.jpg" alt="Team activity 3" loading="lazy">
+                        <span class="gallery-overlay">
+                            <span class="gallery-caption">Award Night</span>
+                        </span>
+                        </a>
+
+                        <a href="images/team/team04.jpg" class="gallery-item" target="_blank" rel="noopener">
+                        <img src="images/team/team04.jpg" alt="Team activity 4" loading="lazy">
+                        <span class="gallery-overlay">
+                            <span class="gallery-caption">Annual Trip</span>
+                        </span>
+                        </a>
+
+                        <a href="images/team/team05.jpg" class="gallery-item" target="_blank" rel="noopener">
+                        <img src="images/team/team05.jpg" alt="Team activity 5" loading="lazy">
+                        <span class="gallery-overlay">
+                            <span class="gallery-caption">Mentoring</span>
+                        </span>
+                        </a>
+
+                        <a href="images/team/team06.jpg" class="gallery-item" target="_blank" rel="noopener">
+                        <img src="images/team/team06.jpg" alt="Team activity 6" loading="lazy">
+                        <span class="gallery-overlay">
+                            <span class="gallery-caption">Community Event</span>
+                        </span>
+                        </a>
+                    </div>
+
                 </div>
-                <div class="about-text">
-                    <p>
-                        Versatile IT Professional and Senior Data Engineer with 10+ years of experience in data integration and software application development. Specializes in building highly reliable ETL/ELT pipelines, Bronze–Silver–Gold architectures, and driving BI enablement. 
-                    </p>
-                    <p>    
-                        Known for adaptability to shifting business strategies and fostering seamless communication across Sales, Operations, BI, and Client stakeholders to ensure optimal data quality. 
-                    </p>
-                    <p> 
-                        Outside of work, a tech explorer who enjoys experimenting with new tools — currently exploring how AI and LLMs can automate and enhance data pipelines.
+
+                <!-- ============================================= -->
+                <!-- Section 2: Achievable Success -->
+                <!-- ============================================= -->
+                <div class="about-section">
+                    <h3 class="section-title">Kejayaan Tercapai</h3>
+                    <div class="about-text">
+                        <p>
+                        Kejayaan bukan satu kebetulan — ia adalah hasil perancangan,
+                        disiplin, dan tindakan yang konsisten.
+                        </p>
+                        <p>
+                        Bersama kami, anda akan mempunyai sistem, sokongan, dan strategi
+                        yang terbukti untuk mencapai kejayaan yang anda impikan.
+                        </p>
+                        <a href="#contact" class="btn btn-primary btn-contact">Mulakan Perjalanan</a>
+                    </div>
+                    <div class="about-compare">
+                        <div class="about-compare-item">
+                            <img 
+                                src="images/aboutme/aboutmebefore.jpg" 
+                                alt="Before" 
+                                loading="lazy"
+                            >
+                            <span class="about-compare-label about-compare-label--before">Before</span>
+                        </div>
+
+                        <div class="about-compare-item">
+                            <img 
+                                src="images/aboutme/aboutmeafter.jpg" 
+                                alt="Achievable Success" 
+                                loading="lazy"
+                            >
+                            <span class="about-compare-label about-compare-label--after">After</span>
+                        </div>
+                    </div>
                     
-                    </p>
-                    <a href="files/azizulazriamirsw-resume.pdf" class="btn btn-primary" download>Download Resume</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="experience-list">
-
-                <!-- ============ COMPANY 3 ============ -->
-                <article class="company-group">
-                    <button class="company-header" aria-expanded="false">
-                        <div class="company-info">
-                            <h3 class="company-name">Concentrix SREV</h3>
-                            <h3 class="company-note">formerly ServiceSource Intl</h3>
-                            <p class="company-meta">Full-time · 14 yrs 7 mos</p>
-                        </div>
-                        <span class="company-toggle" aria-hidden="true"></span>
-                    </button>
-
-                    <div class="company-body">
-                        <div class="company-body-inner">
-
-                            <!-- Role 6 -->
-                            <article class="experience-item">
-                                <button class="experience-header" aria-expanded="false">
-                                    <div class="experience-summary">
-                                        <div class="experience-title-row">
-                                            <h4>Data Scientist</h4>
-                                            <span class="experience-duration">Aug 2021 - May 2026</span>
-                                        </div>
-                                    </div>
-                                    <span class="experience-toggle" aria-hidden="true"></span>
-                                </button>
-                                <div class="experience-body">
-                                    <div class="experience-body-inner">
-                                        <p class="experience-description">
-                                            Data Scientist with nearly 5 years of experience designing and maintaining scalable BI infrastructure and data pipelines. Specialized in Medallion architecture (Bronze → Silver → Gold), cloud data ingestion, and BI platform migrations across Power BI, Tableau, and Domo. Proven track record prototyping modern Lakehouse solutions on Databricks to replace legacy systems and unlock real-time analytics
-                                        </p>
-                                        <ul class="experience-highlights">
-                                            <li>Built and maintained a Bronze → Silver → Gold data pipeline on Databricks, transforming raw production data into analytics-ready layers while enforcing rigorous accuracy checks before downstream consumption.</li>
-                                            <li>Reverse-engineered legacy Power BI dashboards and semantic layers, successfully migrating them to Tableau and Domo — modernizing the BI stack without disrupting business reporting.</li>
-                                            <li>Researched and prototyped a Databricks Lakehouse architecture to replace legacy on-premise infrastructure, enabling real-time analytics and improved pipeline scalability.</li>
-                                        </ul>
-                                        
-                                        <div class="experience-tags">
-                                            <span>Databricks</span>
-                                            <span>Domo</span>
-                                            <span>Tableau</span>
-                                            <span>Power BI</span>
-                                            <span>Dremio (Hive, Nessie, Unity Catalog)</span>
-                                            <span>AWS (S3)</span>
-                                            <span>Python</span>
-                                            <span>SQL & MySQL</span>
-                                            <span>Microsoft SSMS</span>
-                                            <span>Microsoft SSIS</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </article>
-                            
-                            <!-- Role 5 -->
-                            <article class="experience-item">
-                                <button class="experience-header" aria-expanded="false">
-                                    <div class="experience-summary">
-                                        <div class="experience-title-row">
-                                            <h4>Data Engineer 1</h4>
-                                            <span class="experience-duration">Aug 2017 - Jul 2021</span>
-                                        </div>
-                                    </div>
-                                    <span class="experience-toggle" aria-hidden="true"></span>
-                                </button>
-                                <div class="experience-body">
-                                    <div class="experience-body-inner">
-                                        <p class="experience-description">
-                                            Managed automated daily ETL pipelines within data lake and warehouse structures for one "High-Stake" client. Orchestrated, monitored and debugged scheduled Apache Airflow ingestion DAGs data workflows. Designed, developed and maintained custom, ad-hoc Airflow DAGs for rapid data updates.
-
-                                        </p>
-                                        <ul class="experience-highlights">
-                                            <li>Maintained good communication with stakeholders and multiple internal teams and collaborated effectively.</li>
-                                            <li>Reduced system downtime by rapidly diagnosing and troubleshooting complex production DAG errors.</li>
-                                            <li>Led data recovery efforts by performing fallout analysis, data reprocessing, and error remediation.</li>
-
-                                        </ul>
-                                        <div class="experience-tags">
-                                            <span>Apache Airflow</span>
-                                            <span>Apache Hue</span>
-                                            <span>Dbeaver</span>
-                                            <span>AWS (S3)</span>
-                                            <span>Python</span>
-                                            <span>SQL & MySQL</span>
-                                            <span>bash</span>
-                                            <span>Microsoft SSMS</span>
-                                            <span>Microsoft SSIS</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </article>
-
-                            <!-- Role 4 -->
-                            <article class="experience-item">
-                                <button class="experience-header" aria-expanded="false">
-                                    <div class="experience-summary">
-                                        <div class="experience-title-row">
-                                            <h4>Junior Data Engineer</h4>
-                                            <span class="experience-duration">Aug 2016 - Jul 2017</span>
-                                        </div>
-                                    </div>
-                                    <span class="experience-toggle" aria-hidden="true"></span>
-                                </button>
-                                <div class="experience-body">
-                                    <div class="experience-body-inner">
-                                        <p class="experience-description">
-                                            ETL Pipeline Development, Designed, built, and automated robust ETL packages.
-                                            Data Transformation, Implemented data cleansing, filtering, and validation logic within SSIS data flows.
-                                            Data Integration & Schema Updates: Collaborated with cross-functional teams to manage incremental updates and sync new data fields from shared locations to the CRM, supporting sales and operations
-
-                                        </p>
-                                        <ul class="experience-highlights">
-                                            <li>Introduction role, to learn how the company's data team operates and the technologies used</li>
-                                            
-                                        </ul>
-                                        <div class="experience-tags">
-                                            <span>Microsoft SSMS</span>
-                                            <span>Microsoft SSIS</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </article>
-
-                            <!-- Role 3 -->
-                            <article class="experience-item">
-                                <button class="experience-header" aria-expanded="false">
-                                    <div class="experience-summary">
-                                        <div class="experience-title-row">
-                                            <h4>Automation Engineer</h4>
-                                            <span class="experience-duration">Aug 2014 - Jul 2016</span>
-                                        </div>
-                                    </div>
-                                    <span class="experience-toggle" aria-hidden="true"></span>
-                                </button>
-                                <div class="experience-body">
-                                    <div class="experience-body-inner">
-                                        <p class="experience-description">
-                                            Story building based on individual client identifying processes for automation.
-                                            Designed, built and maintained automated solutions to eliminate manual repetitive tasks, with integrated UI for production usage.
-                                            Centralize reference data ensuring accuracy for production use
-
-                                        </p>
-                                        <ul class="experience-highlights">
-                                            <li>Improved production SLAs by automating manual processes</li>
-                                            <li>Improved data accuracy by replacing manual data entry with automated validation</li>
-                                            
-                                        </ul>
-                                        <div class="experience-tags">
-                                            <span>Microsoft SSIS</span>
-                                            <span>HTML & vb.net</span>
-                                            <span>Excel vba</span>
-                                            <span>Selenium</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </article>
-
-                            <!-- Role 2 -->
-                            <article class="experience-item">
-                                <button class="experience-header" aria-expanded="false">
-                                    <div class="experience-summary">
-                                        <div class="experience-title-row">
-                                            <h4>Operations Service Specialist</h4>
-                                            <span class="experience-duration">Aug 2013 - Jul 2014</span>
-                                        </div>
-                                    </div>
-                                    <span class="experience-toggle" aria-hidden="true"></span>
-                                </button>
-                                <div class="experience-body">
-                                    <div class="experience-body-inner">
-                                        <p class="experience-description">
-                                            Responsible for supporting day-to-day service operations, including processing service requests, managing contracts and renewals, maintaining accurate data in CRM systems, and resolving operational issues in a timely manner. Acts as a key liaison between internal teams, clients, and vendors to ensure service delivery meets SLAs and customer expectations. Drives process improvements and ensures compliance with company policies and operational guidelines.
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <!-- Role 1 -->
-                            <article class="experience-item">
-                                <button class="experience-header" aria-expanded="false">
-                                    <div class="experience-summary">
-                                        <div class="experience-title-row">
-                                            <h4>Senior Sales Support Administrator</h4>
-                                            <span class="experience-duration">Nov 2011 - Jul 2013</span>
-                                        </div>
-                                    </div>
-                                    <span class="experience-toggle" aria-hidden="true"></span>
-                                </button>
-                                <div class="experience-body">
-                                    <div class="experience-body-inner">
-                                        <p class="experience-description">
-                                            Administrative and operational support to the sales team, including managing sales data, processing orders and contracts, preparing reports, and coordinating with cross-functional teams to ensure seamless sales operations.
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-
-                        </div>
-                    </div>
-                </article>
-
-                <!-- ============ COMPANY 2 ============ -->
-                <article class="company-group">
-                    <button class="company-header" aria-expanded="false">
-                        <div class="company-info">
-                            <h3 class="company-name">BluInc Media Sdn Bhd</h3>
-                            <p class="company-meta">Full-time · 11 mos</p>
-                        </div>
-                        <span class="company-toggle" aria-hidden="true"></span>
-                    </button>
-
-                    <div class="company-body">
-                        <div class="company-body-inner">
-
-                            <!-- Role 1 -->
-                            <article class="experience-item">
-                                <button class="experience-header" aria-expanded="false">
-                                    <div class="experience-summary">
-                                        <div class="experience-title-row">
-                                            <h4>Traffic Executive</h4>
-                                            <span class="experience-duration">Dec 2010 - Oct 2011</span>
-                                        </div>
-                                    </div>
-                                    <span class="experience-toggle" aria-hidden="true"></span>
-                                </button>
-                                <div class="experience-body">
-                                    <div class="experience-body-inner">
-                                        <p class="experience-description">
-                                            Responsible for coordinating and managing the traffic workflow, including scheduling, tracking, and routing of creative materials, advertisements, and print/digital deliverables. Ensures all assets are delivered accurately and on time to internal teams, clients, and production vendors. Acts as the central point of contact for production timelines, deadlines, and material specifications, ensuring smooth execution from brief to publication.
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- ============ COMPANY 1 ============ -->
-                <article class="company-group">
-                    <button class="company-header" aria-expanded="false">
-                        <div class="company-info">
-                            <h3 class="company-name">APL-NOL</h3>
-                            <p class="company-meta">Full-time · 3 yrs 1 mo</p>
-                        </div>
-                        <span class="company-toggle" aria-hidden="true"></span>
-                    </button>
-
-                    <div class="company-body">
-                        <div class="company-body-inner">
-
-                            <!-- Role 3 -->
-                            <article class="experience-item">
-                                <button class="experience-header" aria-expanded="false">
-                                    <div class="experience-summary">
-                                        <div class="experience-title-row">
-                                            <h4>Rater/QA Representative</h4>
-                                            <span class="experience-duration">Nov 2009 - May 2010</span>
-                                        </div>
-                                    </div>
-                                    <span class="experience-toggle" aria-hidden="true"></span>
-                                </button>
-                                <div class="experience-body">
-                                    <div class="experience-body-inner">
-                                        <p class="experience-description">
-                                            Responsible for evaluating and rating shipments, quotes, or service transactions to ensure accuracy and adherence to company pricing guidelines and customer contracts. Conducts quality assurance reviews, identifies discrepancies or errors, and recommends corrective actions. Serves as a key checkpoint for maintaining data integrity, compliance, and service quality standards across operational processes.
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <!-- Role 2 -->
-                            <article class="experience-item">
-                                <button class="experience-header" aria-expanded="false">
-                                    <div class="experience-summary">
-                                        <div class="experience-title-row">
-                                            <h4>Analyst, GFF Support</h4>
-                                            <span class="experience-duration">Nov 2008 - Oct 2009</span>
-                                        </div>
-                                    </div>
-                                    <span class="experience-toggle" aria-hidden="true"></span>
-                                </button>
-                                <div class="experience-body">
-                                    <div class="experience-body-inner">
-                                        <p class="experience-description">
-                                            Providing analytical and operational support to the Global Freight Forwarding (GFF) function, including data analysis, reporting, process monitoring, and issue resolution. Acts as a key liaison between GFF teams and internal stakeholders to ensure smooth coordination, accurate documentation, and timely execution of freight forwarding activities in line with company policies and customer requirements.
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <!-- Role 1 -->
-                            <article class="experience-item">
-                                <button class="experience-header" aria-expanded="false">
-                                    <div class="experience-summary">
-                                        <div class="experience-title-row">
-                                            <h4>Documentation Coordinator</h4>
-                                            <span class="experience-duration">May 2007 - Oct 2008</span>
-                                        </div>
-                                    </div>
-                                    <span class="experience-toggle" aria-hidden="true"></span>
-                                </button>
-                                <div class="experience-body">
-                                    <div class="experience-body-inner">
-                                        <p class="experience-description">
-                                            End-to-end processing and coordination of outbound documentation, ensuring bills of lading, manifests, and invoices are issued accurately and within strict deadlines in compliance with regulations and customer requirements.
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-
-                        </div>
-                    </div>
-                </article>
 
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Project Card 1 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="images/project1.jpg" alt="Project 1">
-                    </div>
-                    <div class="project-info">
-                        <h3>Web Development</h3>
-                        <p>This exact websites. A small project born out of curiosity.</p>
-                        <div class="project-tags">
-                            <span>html</span>
-                            <span>css</span>
-                            <span>javascript</span>
-                        </div>
-                        <!-- <div class="project-links">
-                            <a href="#" target="_blank">Live Demo →</a>
-                            <a href="#" target="_blank">Source Code →</a>
-                        </div> -->
-                    </div>
-                </article>
 
-                <!-- Project Card 2 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="images/project2.jpg" alt="Project 2">
-                    </div>
-                    <div class="project-info">
-                        <h3>Databricks</h3>
-                        <p>A to Z ingestion, analytics & reporting solution.</p>
-                        <div class="project-tags">
-                            <span>Databricks</span>
-                            <span>PySpark</span>
-                            <span>Power BI</span>
-                            
-                        </div>
-                        <!-- <div class="project-links">
-                            <a href="#" target="_blank">Live Demo →</a>
-                            <a href="#" target="_blank">Source Code →</a>
-                        </div> -->
-                    </div>
-                </article>
 
-                <!-- Project Card 3 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="images/project3.jpg" alt="Project 3">
-                    </div>
-                    <div class="project-info">
-                        <h3>PostgreSQL</h3>
-                        <p>Building a robust database solution with PostgreSQL.</p>
-                        <div class="project-tags">
-                            <span>PostgreSQL</span>
-                            <span>SQL</span>
-                            <span>Database Design</span>
-                        </div>
-                        <!-- <div class="project-links">
-                            <a href="#" target="_blank">Live Demo →</a>
-                            <a href="#" target="_blank">Source Code →</a>
-                        </div> -->
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Data Management & Analytics</h3>
-                    <ul>
-                        <li>Apache HUE</li>
-                        <li>Microsoft SSMS</li>
-                        <li>Databricks</li>
-                        <li>DBeaver</li>
-                        <li>Dremio</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Data Integration & Workflow</h3>
-                    <ul>
-                        <li>Apache Airflow</li>
-                        <li>Microsoft SSIS</li>
-                        <li>Python</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Data Visualization & Reporting</h3>
-                    <ul>
-                        <li>Power BI</li>
-                        <li>Tableau</li>
-                        <li>Domo</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Version Control & Documentation</h3>
-                    <ul>
-                        <li>GitHub</li>
-                        <li>JIRA</li>
-                        <li>Confluence</li>
-                        <!-- <li>Docker</li>
-                        <li>Kubernetes</li> -->
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML & CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Cloud Infrastructure Services</h3>
-                    <ul>
-                        <li>Amazon Web Services (AWS): Amazon S3</li>
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-intro">
-                Have a project in mind or just want to say hi? I'd love to hear from you!
-            </p>
-            <div class="contact-info">
-            <a href="mailto:azizulazri.amirsw@gmail.com" class="contact-card">
-                <span class="contact-icon">✉️</span>
-                <div class="contact-details">
-                    <span class="contact-label">Email</span>
-                    <span class="contact-value">azizulazri.amirsw@gmail.com</span>
+            <h2 class="section-title">Berhubung</h2>
+            <div class="contact-content">
+                
+                <div class="contact-image">
+                    <img src="images/profile.jpg" alt="Your Name">
                 </div>
-            </a>
-            <a href="tel:+60125413754" class="contact-card">
-                <span class="contact-icon">📱</span>
-                <div class="contact-details">
-                    <span class="contact-label">Phone</span>
-                    <span class="contact-value">+60 12-541 3754</span>
+                
+                <div class="contact-info">
+                    <a href="https://wa.me/60104471796" target="_blank" rel="noopener" class="contact-card">
+                        <span class="contact-icon">💬</span>
+                        <div class="contact-details">
+                            <span class="contact-label">WhatsApp:</span>
+                            <span class="contact-value">Mesej saya</span>
+                        </div>
+                    </a>
+                    <a href="tel:+60104471796" class="contact-card">
+                        <span class="contact-icon">📱</span>
+                        <div class="contact-details">
+                            <span class="contact-label">Telefon:</span>
+                            <span class="contact-value">+60 10-447 1796</span>
+                        </div>
+                    </a>
+                    <a href="mailto:onekerok@gmail.com" class="contact-card">
+                        <span class="contact-icon">✉️</span>
+                        <div class="contact-details">
+                            <span class="contact-label">Emel:</span>
+                            <span class="contact-value">onekerok@gmail.com</span>
+                        </div>
+                    </a>
+                    
                 </div>
-            </a>
-            <a href="https://wa.me/60125413754" target="_blank" rel="noopener" class="contact-card">
-                <span class="contact-icon">💬</span>
-                <div class="contact-details">
-                    <span class="contact-label">WhatsApp</span>
-                    <span class="contact-value">Chat with me</span>
-                </div>
-            </a>
-
-            <a href="https://linkedin.com/in/azizulazriamirsw" target="_blank" rel="noopener" class="contact-card">
-                <span class="contact-icon">💼</span>
-                <div class="contact-details">
-                    <span class="contact-label">LinkedIn</span>
-                    <span class="contact-value">/in/azizulazriamirsw</span>
-                </div>
-            </a>
-        </div>
-            <!-- <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form> -->
+            </div>
+            
         </div>
     </section>
 
